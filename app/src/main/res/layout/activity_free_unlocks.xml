@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".FreeUnlocks">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/indoscreen"
+            android:text="Free Unlock"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock your phone"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/indoscreen"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="online"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/indoscreen"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center_horizontal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If your phone has the network locked and does not accept SIM cards from other carriers, you can unlock it with"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:justificationMode="inter_word"
+                    android:fontFamily="@font/indoscreen"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock Hub"
+                    android:fontFamily="@font/indoscreen"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_shape"
+                android:layout_marginHorizontal="5dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:padding="0dp">
+
+                        <TextView
+                            android:id="@+id/alcatel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:padding="20dp"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"
+                            android:text="Alcatel" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD"/>
+
+                        <TextView
+                            android:id="@+id/htc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"
+                            android:text="Htc" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD" />
+
+                        <TextView
+                            android:id="@+id/huawei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Huawei"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"/>
+
+                    <TableRow
+                        android:padding="0dp">
+
+                        <TextView
+                            android:id="@+id/iphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:padding="20dp"
+                            android:text="iPhone"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD"/>
+
+                        <TextView
+                            android:id="@+id/lg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="LG"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD" />
+
+                        <TextView
+                            android:id="@+id/samsung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Samsung"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"/>
+
+                    <TableRow
+                        android:padding="0dp">
+
+                        <TextView
+                            android:id="@+id/sony"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:padding="20dp"
+                            android:text="Sony"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD"/>
+
+                        <TextView
+                            android:id="@+id/blackberry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Blackberry"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD" />
+
+                        <TextView
+                            android:id="@+id/nokia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Nokia"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"/>
+
+                    <TableRow
+                        android:padding="0dp">
+
+                        <TextView
+                            android:id="@+id/vivo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:padding="20dp"
+                            android:text="Vivo"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD"/>
+
+                        <TextView
+                            android:id="@+id/infinix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Infinix"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD" />
+
+                        <TextView
+                            android:id="@+id/realme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Realme"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"/>
+
+                    <TableRow
+                        android:padding="0dp">
+
+                        <TextView
+                            android:id="@+id/mi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:padding="20dp"
+                            android:text="Xiaomi"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD"/>
+
+                        <TextView
+                            android:id="@+id/lenovo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Lenovo"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#BDBDBD" />
+
+                        <TextView
+                            android:id="@+id/microsoft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:text="Microsoft"
+                            android:fontFamily="@font/indoscreen"
+                            android:textSize="16sp"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

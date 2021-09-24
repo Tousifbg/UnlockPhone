@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/card_shape.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/country_shape.xml" value="0.18958333333333333" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/gradient_shape3.xml" value="0.18958333333333333" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/img_shape.xml" value="0.18958333333333333" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/random_shape.xml" value="0.18958333333333333" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/searchview_shape.xml" value="0.18958333333333333" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/shape_completed.xml" value="0.18125" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable-v24/shape_received.xml" value="0.18125" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable/gradient_shape1.xml" value="0.26615384615384613" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable/gradient_shape2.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.1909722222222222" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.26615384615384613" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable/note_shape.xml" value="0.18819444444444444" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/drawable/shape_processing.xml" value="0.18125" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/activity_complete_status.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/activity_free_unlocks.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/activity_main.xml" value="0.23148148148148148" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/activity_more_services.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/activity_search_screen.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/activity_unlock_screen.xml" value="0.2" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/app_bar.xml" value="0.264" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/country_spinner.xml" value="0.2" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/fragment_free_unlock.xml" value="0.2" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/fragment_i_m_e_i_checker.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/fragment_more_services.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/fragment_status.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/fragment_unlock.xml" value="0.25416666666666665" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/imei_result_dialog.xml" value="0.190625" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/model_autocomplete_row.xml" value="0.21388888888888888" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/nav_header_main.xml" value="0.264" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/result_dialog.xml" value="0.176" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/layout/status_list_item.xml" value="0.2" />
+        <entry key="..\:/NewAndroidApps/UnlockPhone/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

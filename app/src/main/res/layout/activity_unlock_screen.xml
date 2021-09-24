@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".UnlockScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlock Hub"
+            android:fontFamily="@font/indoscreen"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="12dp"/>
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="12dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock Samsung by IMEI - USA"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/indoscreen"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock Samsung phone by IMEI in minutes safely, fast and from the control of your home. Compatible with AT&amp;T-mobile, MetroPCS, Cricket, Sprint, Verizon, Tracfone, Boost Mobile, Xfinity, etc..."
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="14dp"
+                    android:justificationMode="inter_word"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/indoscreen"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:visibility="gone"
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:lottie_autoPlay="true"
+                android:layout_marginTop="40dp"
+                app:lottie_rawRes="@raw/internet"
+                android:layout_marginHorizontal="10dp"
+                app:lottie_loop="true"/>
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="14dp">
+
+
+                <ImageView
+                    android:id="@+id/model_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/img_shape"
+                    android:padding="5dp"
+                    android:layout_margin="14dp"
+                    android:src="@drawable/note20"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select the network your phone is locked"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/indoscreen" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="NOT the network you want to use"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:justificationMode="inter_word"
+                    android:fontFamily="@font/indoscreen" />
+
+                <LinearLayout
+                    android:id="@+id/country_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="United States"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:fontFamily="@font/indoscreen"
+                        android:background="@drawable/country_shape"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:background="@drawable/random_shape"
+                        android:padding="5.5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/network_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="14dp">
+
+                    <TextView
+                        android:id="@+id/network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select network"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:fontFamily="@font/indoscreen"
+                        android:background="@drawable/country_shape"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:background="@drawable/random_shape"
+                        android:padding="5.5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/currency_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="14dp">
+
+                    <TextView
+                        android:id="@+id/currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="US Dollar - USD"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:fontFamily="@font/indoscreen"
+                        android:background="@drawable/country_shape"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:background="@drawable/random_shape"
+                        android:padding="5.5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/white">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imei"
+                    android:background="@drawable/country_shape"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="Type your device IMEI"
+                    android:fontFamily="@font/indoscreen"
+                    android:textColor="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSubmit"
+                    android:layout_marginTop="15dp"
+                    android:text="SUBMIT"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/indoscreen"
+                    android:textSize="16sp"
+                    android:background="@drawable/random_shape"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/deviceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device Info"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/indoscreen"
+                    android:layout_marginHorizontal="10dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
