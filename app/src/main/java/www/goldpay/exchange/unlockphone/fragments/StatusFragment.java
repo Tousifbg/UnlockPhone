@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -75,6 +76,10 @@ public class StatusFragment extends Fragment {
     private LottieAnimationView animationView,animationViewInternet;
 
     String IMEI, DATE;
+
+    RelativeLayout relative;
+
+    String status;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -175,10 +180,13 @@ public class StatusFragment extends Fragment {
                                         //FIND Difference between today date and api return date
                                         getDateDiffFromNow(DATE);
 
+                                        //click completed btn event
+                                        clickCompletedBtn();
+
                                         //check difference here
                                         if (days_difference >= 1 && days_difference < 7)
                                         {
-                                            Toast.makeText(getContext(), "equal or more than 2", Toast.LENGTH_SHORT).show();
+                                            status = "Received";
                                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                                                 rdBtn1.setButtonTintList(ColorStateList.valueOf(ContextCompat
                                                         .getColor(getContext(), R.color.colorPrimary)));
@@ -207,7 +215,7 @@ public class StatusFragment extends Fragment {
                                         }
                                       else if (days_difference >= 7 && days_difference < 10)
                                         {
-                                            Toast.makeText(getContext(), "equal or mroe than 7", Toast.LENGTH_SHORT).show();
+                                            status = "Processing";
                                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                                                 rdBtn2.setButtonTintList(ColorStateList.valueOf(ContextCompat
                                                         .getColor(getContext(), R.color.colorAccent)));
@@ -235,6 +243,7 @@ public class StatusFragment extends Fragment {
                                         }
                                         else if (days_difference >= 10)
                                         {
+                                            status = "Completed";
                                             Toast.makeText(getContext(), "equal or mroe than 10", Toast.LENGTH_SHORT).show();
                                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                                                 rdBtn3.setButtonTintList(ColorStateList.valueOf(ContextCompat
@@ -261,8 +270,6 @@ public class StatusFragment extends Fragment {
                                             btnProcessing.setBackground(getResources().getDrawable(R.drawable.card_shape));
                                             btnCompleted.setBackground(getResources().getDrawable(R.drawable.shape_completed));
 
-                                            //click completed btn event
-                                            clickCompletedBtn();
                                         }
 
                                     } catch (NullPointerException e) {
@@ -292,17 +299,14 @@ public class StatusFragment extends Fragment {
     }
 
     private void clickCompletedBtn() {
-        btnCompleted.setOnClickListener(new View.OnClickListener() {
+        relative.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (days_difference >= 10){
-                    Intent intent = new Intent(getContext(), CompleteStatus.class);
-                    intent.putExtra("my_imei",IMEI);
-                    intent.putExtra("date",DATE);
-                    startActivity(intent);
-                }else {
-                    Log.e("TOUSIF","less than 10");
-                }
+                Intent intent = new Intent(getContext(), CompleteStatus.class);
+                intent.putExtra("my_imei",IMEI);
+                intent.putExtra("date",DATE);
+                intent.putExtra("status",status);
+                startActivity(intent);
             }
         });
     }
@@ -355,5 +359,6 @@ public class StatusFragment extends Fragment {
         rdBtn3 = view.findViewById(R.id.rdBtn3);
         animationView = view.findViewById(R.id.animationView);
         animationViewInternet = view.findViewById(R.id.animationViewInternet);
+        relative = view.findViewById(R.id.relative);
     }
 }

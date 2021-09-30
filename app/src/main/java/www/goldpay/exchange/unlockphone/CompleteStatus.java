@@ -49,6 +49,9 @@ public class CompleteStatus extends AppCompatActivity {
 
     private ScrollView card;
 
+    private TextView status_txt;
+
+    private String status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +69,14 @@ public class CompleteStatus extends AppCompatActivity {
         if (extras != null){
             imei = extras.getString("my_imei");
             date = extras.getString("date");
+            status = extras.getString("status");
             if (NetworkUtils.isNetworkConnected(this))
             {
                 //call api
                 vollyRequest();
                 card.setVisibility(View.VISIBLE);
                 animationView.setVisibility(View.GONE);
+                status_txt.setText("Status: " +status);
             }
             else {
                 showNow.scheduleDismiss();
@@ -94,6 +99,7 @@ public class CompleteStatus extends AppCompatActivity {
         animationView = findViewById(R.id.animationView);
         layout2 = findViewById(R.id.layout2);
         card = findViewById(R.id.card);
+        status_txt = findViewById(R.id.status_txt);
     }
 
     public void vollyRequest()
