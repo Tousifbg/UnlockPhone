@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,8 @@ public class SearchScreen extends AppCompatActivity {
     private String img;
 
     ModelNames student;
+
+    //ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
